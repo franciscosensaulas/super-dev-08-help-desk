@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helpdesk — Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">H</span>
+        <span class="brand-name">Helpdesk</span>
+      </div>
+      <span class="brand-tag">Painel de administração</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="tabs" id="tabs" role="tablist"></nav>
+    <main id="panels"></main>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <div id="confirm-dialog" class="modal-overlay" hidden>
+    <div class="modal">
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+      </div>
+      <h3 id="confirm-title">Apagar registro</h3>
+      <p id="confirm-message">Essa ação não pode ser desfeita. Deseja continuar?</p>
+      <div class="actions actions-center">
+        <button type="button" id="confirm-no" class="btn btn-ghost">Cancelar</button>
+        <button type="button" id="confirm-yes" class="btn btn-danger">Apagar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
