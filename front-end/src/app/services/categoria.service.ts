@@ -16,12 +16,15 @@ export class CategoriaService {
     return this.httpClient.post<void>(url, categoria);
   }
 
-
   listar(): Observable<CategoriaResponse[]>{
     const url = this.baseUrl + "/categorias";
 
     return this.httpClient.get<CategoriaResponse[]>(url);
   }
-
+  
+  apagar(id: number): Observable<void>{
+    const url = this.baseUrl + "/categorias/" + id;
+    return this.httpClient.delete<void>(url);
+  }
 }
 

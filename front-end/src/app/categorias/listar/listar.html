@@ -8,6 +8,8 @@
                 <th>id</th>
                 <th>nome</th>
                 <th>descrição</th>
+                <th>Status</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +23,12 @@
                 </td>
                 <td>
                     {{categoria.descricao}}
+                </td>
+                <td>
+                    {{categoria.ativa}}
+                </td>
+                <td>
+                    <button (click)="apagar(categoria.id)">Apagar</button>
                 </td>
             </tr>
         }

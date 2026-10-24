@@ -28,7 +28,9 @@ export class CategoriaListar {
     })
   }
 
-  // apagar(id: number): void {
-  //   this.categoriaService.apagar(id).subscribe
-  // }
+  apagar(id: number): void {
+    this.categoriaService.apagar(id).subscribe({
+      next: () => this.carregarCategorias()
+    });
+  }
 }
