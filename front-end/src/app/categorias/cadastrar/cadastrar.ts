@@ -8,6 +8,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-cadastrar',
   imports: [FormsModule, RouterLink],
   templateUrl: './cadastrar.html',
+  styleUrl: './cadastrar.css',
 })
 export class CategoriaCadastrar {
 

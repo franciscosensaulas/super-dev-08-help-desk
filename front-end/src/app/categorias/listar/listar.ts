@@ -8,6 +8,7 @@ import { CategoriaService } from '../../services/categoria.service';
   selector: 'app-listar',
   imports: [FormsModule, CommonModule, RouterLink],
   templateUrl: './listar.html',
+  styleUrl: './listar.css',
 
 })
 

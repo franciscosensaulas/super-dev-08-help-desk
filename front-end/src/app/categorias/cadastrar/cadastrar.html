@@ -1,14 +1,20 @@
-<div>
-    <h1>Cadastro Categoria</h1>
-    <a routerLink="/categorias">Voltar</a>
+<div class="cartao">
+    <div class="cabecalho-pagina">
+        <h1>Cadastro Categoria</h1>
+        <a routerLink="/categorias" class="voltar">Voltar</a>
+    </div>
 
-    <label for="nome">Nome:</label>
-    <input [(ngModel)]="form.nome" type="text" id="nome">
+    <div class="campo">
+        <label for="nome">Nome:</label>
+        <input [(ngModel)]="form.nome" type="text" id="nome">
+    </div>
 
-    <label for="descricao">Descrição:</label>
-    <textarea [(ngModel)]="form.descricao" id="descricao"></textarea>
+    <div class="campo">
+        <label for="descricao">Descrição:</label>
+        <textarea [(ngModel)]="form.descricao" id="descricao" rows="4"></textarea>
+    </div>
 
-    <button (click)="cadastrar()">Cadastrar</button>
-
-    
+    <div class="acoes">
+        <button type="button" class="btn btn-primario" (click)="cadastrar()">Cadastrar</button>
+    </div>
 </div>
