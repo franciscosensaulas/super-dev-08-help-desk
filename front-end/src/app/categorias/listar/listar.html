@@ -1,4 +1,29 @@
 <div>
     <h1>Categorias</h1>
     <a routerLink="/categorias/cadastrar">Cadastrar</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>nome</th>
+                <th>descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(categoria of categorias(); track categoria.id) {
+            <tr>
+                <td>
+                    {{categoria.id}}
+                </td>
+                <td>
+                    {{categoria.nome}}
+                </td>
+                <td>
+                    {{categoria.descricao}}
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
 </div>
