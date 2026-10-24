@@ -1,1 +1,12 @@
-<p>cadastrar works!</p>
+<div>
+    <h1>Cadastro Categoria</h1>
+
+    <label for="nome">Nome:</label>
+    <input [(ngModel)]="form.nome" type="text" id="nome">
+
+    <label for="descricao">Descrição:</label>
+    <textarea [(ngModel)]="form.descricao" id="descricao"></textarea>
+
+    <button (click)="cadastrar()">Cadastrar</button>
+
+</div>
