@@ -11,14 +11,9 @@ import { CategoriaService } from '../../services/categoria.service';
   styleUrl: './listar.css',
 
 })
-
 export class CategoriaListar {
   categorias = signal<any[]>([]);
-  
-  constructor(
-    private categoriaService:CategoriaService
-  ){}
-
+  constructor(private categoriaService:CategoriaService){}
   ngOnInit(): void{
     this.carregarCategorias();
   }

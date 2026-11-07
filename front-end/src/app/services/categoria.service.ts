@@ -3,9 +3,8 @@ import { Injectable } from '@angular/core';
 import { CategoriaCadastrarRequest, CategoriaResponse } from '../model/categoria.model';
 import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root',
-})
+// ng g service services\categoria.service
+@Injectable({providedIn: 'root'})
 export class CategoriaService {
   private baseUrl:string="http://localhost:8080";
   constructor(private httpClient : HttpClient){
@@ -27,4 +26,3 @@ export class CategoriaService {
     return this.httpClient.delete<void>(url);
   }
 }
-
